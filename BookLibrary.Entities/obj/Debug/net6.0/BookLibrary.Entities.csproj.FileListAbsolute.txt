@@ -1,0 +1,12 @@
+F:\TaaVClass\API\BookLibraryAPI\Code\BookLibrary\BookLibrary.Entities\bin\Debug\net6.0\BookLibrary.Entities.deps.json
+F:\TaaVClass\API\BookLibraryAPI\Code\BookLibrary\BookLibrary.Entities\bin\Debug\net6.0\BookLibrary.Entities.dll
+F:\TaaVClass\API\BookLibraryAPI\Code\BookLibrary\BookLibrary.Entities\bin\Debug\net6.0\BookLibrary.Entities.pdb
+F:\TaaVClass\API\BookLibraryAPI\Code\BookLibrary\BookLibrary.Entities\obj\Debug\net6.0\BookLibrary.Entities.csproj.AssemblyReference.cache
+F:\TaaVClass\API\BookLibraryAPI\Code\BookLibrary\BookLibrary.Entities\obj\Debug\net6.0\BookLibrary.Entities.GeneratedMSBuildEditorConfig.editorconfig
+F:\TaaVClass\API\BookLibraryAPI\Code\BookLibrary\BookLibrary.Entities\obj\Debug\net6.0\BookLibrary.Entities.AssemblyInfoInputs.cache
+F:\TaaVClass\API\BookLibraryAPI\Code\BookLibrary\BookLibrary.Entities\obj\Debug\net6.0\BookLibrary.Entities.AssemblyInfo.cs
+F:\TaaVClass\API\BookLibraryAPI\Code\BookLibrary\BookLibrary.Entities\obj\Debug\net6.0\BookLibrary.Entities.csproj.CoreCompileInputs.cache
+F:\TaaVClass\API\BookLibraryAPI\Code\BookLibrary\BookLibrary.Entities\obj\Debug\net6.0\BookLibrary.Entities.dll
+F:\TaaVClass\API\BookLibraryAPI\Code\BookLibrary\BookLibrary.Entities\obj\Debug\net6.0\refint\BookLibrary.Entities.dll
+F:\TaaVClass\API\BookLibraryAPI\Code\BookLibrary\BookLibrary.Entities\obj\Debug\net6.0\BookLibrary.Entities.pdb
+F:\TaaVClass\API\BookLibraryAPI\Code\BookLibrary\BookLibrary.Entities\obj\Debug\net6.0\ref\BookLibrary.Entities.dll
