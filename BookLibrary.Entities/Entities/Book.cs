@@ -10,42 +10,58 @@ public class Book
         Count = count;
         AutherId = autherId;
         GenreId = genreId;
-
         NumberOfBorrowBook = 0;
+        RestOfBook = count;
     }
 
     public int Id { get; set; }
     public string Title { get; private set; }
     public string Category { get; private set; }
     public int Count { get; private set; }
-    public int NumberOfBorrowBook { get;private set; }
+    public int NumberOfBorrowBook { get; private set; }
     public int AutherId { get; private set; }
+
+    public int RestOfBook { get; private set; }
     public Auther Auther { get; set; }
 
     public int GenreId { get; private set; }
-    public Genre Genre { get;  set; }
+    public Genre Genre { get; set; }
 
     public List<OrderItem> OrderItems { get; set; }
 
 
 
-    public void SetNumberOfBorrowBook(int number)
+    public void IncreaseNumberOfBorrowBook(int number)
     {
         if (number > Count)
         {
             throw new Exception("number of borrow book can not be more than number of book");
-        }  
+        }
 
-        NumberOfBorrowBook=number;
-        Count = Count - number;
-
+        NumberOfBorrowBook = NumberOfBorrowBook + number;
+        RestOfBook = RestOfBook - number;
     }
+
+
+    public void DecreaseNumberOfBorrowBook(int number)
+    {
+        NumberOfBorrowBook = NumberOfBorrowBook - number;
+        RestOfBook = RestOfBook + number;
+    }
+
     public void Edit(string title, string category, int count)
     {
         Guard(title, category, count);
         Title = title;
         Category = category;
     }
+
+
+
+
+
+
+
 
     public void DecreaseCount(int count)
     {
@@ -56,6 +72,8 @@ public class Book
 
         Count = Count - count;
     }
+
+
 
 
     public void IncreaseCount(int count)

@@ -4,7 +4,7 @@ namespace BookLibrary.Services.Books;
 
 public interface IBookServicecs
 {
-    public int Add(AddBookDto command);
+    public int Add(CreateBookDto command);
 
     public void Edit(int id, EditBookDto command);
 

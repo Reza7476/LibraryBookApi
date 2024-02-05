@@ -6,18 +6,23 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BookLibrary.Migrations;
-[Migration(202402031401)]
-public class _202402031401_ModifyBook : Migration
+
+[Migration(202402041146)]
+public class _202402041146_AddRestOfBookColumn : Migration
 {
+
     public override void Up()
     {
+
         Alter.Table("Books")
-            .AddColumn("NumberOfBorrowBook").AsInt32().NotNullable();
+            .AddColumn("RestOfBook").AsInt32().NotNullable().WithDefaultValue(3);
+
 
     }
     public override void Down()
     {
-        Delete.Column("NumberOfBorrowBook").FromTable("Books");
-    }
+        Delete.Column("RestOfBook").FromTable("Books");
 
+
+    }
 }

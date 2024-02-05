@@ -43,12 +43,19 @@ public class BookController : ControllerBase
         }
         else
         {
-
-            command.AutherId = auther.Id;
-            command.GenreId = genre.Id;
-
-            var book = _bookService.Add(command);
+            CreateBookDto dto = new CreateBookDto()
+            {
+                Title = command.Title,
+                Count = command.Count,
+                GenreId = genre.Id,
+                AutherId = auther.Id,
+                Category = command.Category
+            };
+          
+        var book = _bookService.Add(dto);
             return book;
+
+
         }
 
 

@@ -2,6 +2,7 @@ using BookLibrary;
 using BookLibrary.Services.Authers;
 using BookLibrary.Services.Books;
 using BookLibrary.Services.Genres;
+using BookLibrary.Services.Order;
 using BookLibrary.Services.Users;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,6 +23,7 @@ builder.Services.AddScoped<IAutherService, AutherService>();
 builder.Services.AddScoped<IGenreService, GenreService>();
 builder.Services.AddScoped<IBookServicecs, BookService>();
 builder.Services.AddScoped<IUserServicecs, UserService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

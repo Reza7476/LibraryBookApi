@@ -15,10 +15,13 @@ public class BookService : IBookServicecs
         _db = db;
     }
 
-    public int Add(AddBookDto command)
+    public int Add(CreateBookDto command)
     {
-        var book = new Book(command.Title, command.Category, command.Count, command.AutherId, command.GenreId);
 
+
+        var book = new Book(command.Title, command.Category, command.Count,command.AutherId,command.GenreId);
+
+        
         _db.Books.Add(book);
         _db.SaveChanges();
         return book.Id;
@@ -61,8 +64,11 @@ public class BookService : IBookServicecs
                 AutherName = _.Auther.Name,
                 Category = _.Category,
                 GenreTitle = _.Genre.Title,
-                Count = _.Count,
+                Capacity = _.Count,
+                NumberOfBorrowBook=_.NumberOfBorrowBook,
+                numberOfNotBorrowBook=_.RestOfBook,
                 Id = _.Id
+
 
             }).FirstOrDefault();
 
@@ -86,7 +92,9 @@ public class BookService : IBookServicecs
                AutherName = _.Auther.Name,
                Category = _.Category,
                GenreTitle = _.Genre.Title,
-               Count = _.Count,
+               Capacity = _.Count,
+               NumberOfBorrowBook = _.NumberOfBorrowBook,
+               numberOfNotBorrowBook = _.RestOfBook,
                Id = _.Id
 
            }).ToList();
@@ -122,7 +130,7 @@ public class BookService : IBookServicecs
             Title = _.Title,
             AutherName = _.Auther.Name,
             Category = _.Category,
-            Count = _.Count,
+            Capacity = _.Count,
             GenreTitle = _.Genre.Title,
             Id = _.Id
         }).FirstOrDefault();
@@ -155,7 +163,7 @@ public class BookService : IBookServicecs
                      {
                          AutherName = book.Auther.Name,
                          Category = book.Category,
-                         Count = book.Count,
+                         Capacity = book.Count,
                          Id = book.Id,
                          GenreTitle = book.Genre.Title,
                          Title = book.Title

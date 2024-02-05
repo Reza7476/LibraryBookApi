@@ -6,18 +6,19 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BookLibrary.Migrations;
-[Migration(202402031401)]
-public class _202402031401_ModifyBook : Migration
+[Migration(20240205727)]
+public class _20240205727_AddOrderDateToOrderItems : Migration
 {
+
     public override void Up()
     {
-        Alter.Table("Books")
-            .AddColumn("NumberOfBorrowBook").AsInt32().NotNullable();
+
+        Alter.Table("OrderItems")
+            .AddColumn("OrderDate").AsDateTime2().NotNullable();
 
     }
     public override void Down()
     {
-        Delete.Column("NumberOfBorrowBook").FromTable("Books");
+        Delete.Column("OrderDate").FromTable("OrderItems");
     }
-
 }

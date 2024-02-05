@@ -2,31 +2,37 @@
 
 public class OrderItem
 {
-    public OrderItem(int numberOfBook, int bookId, int orderId)
+    public OrderItem(int numberOfBook, int bookId, int orderId, DateTime returnDate)
     {
         NumberOfBook = numberOfBook;
-        BorrowDate = DateTime.Now;
+
         BookId = bookId;
         OrderId = orderId;
-        
+        ReturnDate = returnDate;
+        ReturnStatus = false;
+        OrderDate = DateTime.Now;
+   
     }
 
     public int Id { get; set; }
     public int NumberOfBook { get; private set; }
-    public DateTime BorrowDate { get; private set; }
+    
     public DateTime ReturnDate { get; private set; }
+    public DateTime OrderDate { get; private set; }
+
+ 
     public int BookId { get; private set; }
     public int OrderId { get; private set; }
-
+    public bool ReturnStatus { get; private set; }
     public Order Order { get; set; }
 
     public Book Book { get; set; }
 
-
-
-    
-    public void SetReturnDate(int days)
+    public void ChangeReturnStatus()
     {
-        ReturnDate = BorrowDate.AddDays(days);
+        ReturnStatus = true;
     }
+
+
+
 }
