@@ -2,18 +2,18 @@
 
 public class Order
 {
-    public Order(int numberOfBook, int userId)
+    public Order( int userId)
     {
-        Guard(numberOfBook);
-        NumberOfBook = numberOfBook;
+       
+      
         UserId = userId;
-        SetOpenOrder(numberOfBook);
+        OrderDate = DateTime.Now;
     }
 
     public int Id { get; set; }
-    public bool IsOpen { get; private set; }
-    public int NumberOfBook { get; private set; }
-
+  
+    public int NumberOfNotReturnedBook { get; private set; }
+    public DateTime  OrderDate { get; private set; }
     public int UserId { get; set; }
     public User User { get; set; }
 
@@ -25,21 +25,16 @@ public class Order
         {
             throw new Exception("number of book is less than zero");
         }
-       
     }
-
-
     
-    public void SetOpenOrder(int numberOfBook)
+    public void IncreaseNmberOfNotReturnedBook(int number)
     {
-
-        if (numberOfBook >= 4)
-        {
-            IsOpen = false;
-        }
-        else
-        {
-            IsOpen = true;
-        }
+        NumberOfNotReturnedBook = NumberOfNotReturnedBook + number;
     }
+
+    public void DecreaseNumberOfNotReturnedBook(int number)
+    {
+        NumberOfNotReturnedBook = NumberOfNotReturnedBook - number;
+    }
+    
 }

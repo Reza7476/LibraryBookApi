@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using BookLibrary.Entities.Entities;
+using System.ComponentModel.DataAnnotations;
 
 namespace BookLibrary.Services.Books.DTOs;
 
@@ -16,8 +17,12 @@ public class AddBookDto
     public string  AutherName { get; set; }
     [Required]
     public string GenreTitle { get; set; }
-    public int AutherId { get; set; }
-    public int GenreId { get; set; }
+
+    //public Auther Auther { get; set; }
+    //public Genre Genre { get; set; }
+
+    //public string  AutherName { get; set; }
+    //public string GenreTitle { get; set; }
 
 
 }

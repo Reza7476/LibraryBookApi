@@ -22,7 +22,7 @@ public class UserController : ControllerBase
         var user = _userService.Add(command);
         return user;
     }
-    [HttpPost("edit/{id}")]
+    [HttpPatch("edit/{id}")]
     public void Edit([FromRoute] int id, EditUserDto command)
     {
 
