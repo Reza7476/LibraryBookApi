@@ -33,9 +33,9 @@ public class OrderController : ControllerBase
         _orderService.Returnbook(command);
     }
 
-    [HttpGet("customerStatus/{id}")]
-    public List<CustomerStatusDto>? CustomrStatus(int id)
+    [HttpGet("customerStatus/{userId}")]
+    public List<CustomerStatusDto>? CustomrStatus(int userId)
     {
-        return _orderService.CustomerStatus(id);
+        return _orderService.CustomerStatus(userId);
     }
 }
