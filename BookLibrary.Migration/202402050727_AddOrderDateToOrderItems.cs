@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BookLibrary.Migrations;
-[Migration(20240205727)]
+[Migration(202402050727)]
 public class _20240205727_AddOrderDateToOrderItems : Migration
 {
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bbugTnV5PvPwlVRfcTroVudrd47iiwKsOJ2WlZBxurhXUi3S98hvOHPH/jhMucHMnVdNhpTx4KJ3ugd6jubpKQ==",
+  "dgSpecHash": "brlrsPrCcdTT1Nym44RWtGFUe4J5tXgAg3CIy+meWP1x0ThgHyStDRn9xWb2a6T8+MEVfgRFCdFgSR71sv3EIA==",
   "success": true,
-  "projectFilePath": "F:\\TaaVClass\\API\\BookLibraryAPI\\Code\\BookLibrary\\BookLibrary.Entities\\BookLibrary.Entities.csproj",
+  "projectFilePath": "C:\\Users\\Reza\\Desktop\\TestIgnore\\LibraryBookApi\\BookLibrary.Entities\\BookLibrary.Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

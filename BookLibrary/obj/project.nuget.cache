@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YOoqwivgG2cAuNL7erZAc9qr+Z8CXmi737QklBHjbnAIc6TNBKbSrKz0AUTEsdCHN5gZlQrTTeQAng/7XJf3CQ==",
+  "dgSpecHash": "uIn8KeO3Wk44rRhT99Jw2w/7bTGS7Rq+3/s4HvwTNI+prc0KNIldPliseX6YMrBwJFNrROx7QFUwvnM9/G7oFg==",
   "success": true,
-  "projectFilePath": "F:\\TaaVClass\\API\\BookLibraryAPI\\Code\\BookLibrary\\BookLibrary\\BookLibrary.csproj",
+  "projectFilePath": "C:\\Users\\Reza\\Desktop\\TestIgnore\\LibraryBookApi\\BookLibrary\\BookLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Reza\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

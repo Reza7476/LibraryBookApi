@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\TaaVClass\\API\\BookLibraryAPI\\Code\\BookLibrary\\BookLibrary.Entities\\BookLibrary.Entities.csproj": {}
+    "C:\\Users\\Reza\\Desktop\\TestIgnore\\LibraryBookApi\\BookLibrary.Entities\\BookLibrary.Entities.csproj": {}
   },
   "projects": {
-    "F:\\TaaVClass\\API\\BookLibraryAPI\\Code\\BookLibrary\\BookLibrary.Entities\\BookLibrary.Entities.csproj": {
+    "C:\\Users\\Reza\\Desktop\\TestIgnore\\LibraryBookApi\\BookLibrary.Entities\\BookLibrary.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\TaaVClass\\API\\BookLibraryAPI\\Code\\BookLibrary\\BookLibrary.Entities\\BookLibrary.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Reza\\Desktop\\TestIgnore\\LibraryBookApi\\BookLibrary.Entities\\BookLibrary.Entities.csproj",
         "projectName": "BookLibrary.Entities",
-        "projectPath": "F:\\TaaVClass\\API\\BookLibraryAPI\\Code\\BookLibrary\\BookLibrary.Entities\\BookLibrary.Entities.csproj",
+        "projectPath": "C:\\Users\\Reza\\Desktop\\TestIgnore\\LibraryBookApi\\BookLibrary.Entities\\BookLibrary.Entities.csproj",
         "packagesPath": "C:\\Users\\Reza\\.nuget\\packages\\",
-        "outputPath": "F:\\TaaVClass\\API\\BookLibraryAPI\\Code\\BookLibrary\\BookLibrary.Entities\\obj\\",
+        "outputPath": "C:\\Users\\Reza\\Desktop\\TestIgnore\\LibraryBookApi\\BookLibrary.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
